@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Accessibility</string>
+    <string name="heading_by_heading_paragraph">Some apps use headings to summarize groups of text that appear on screen. If a particular View element represents a heading, you can indicate its purpose for accessibility services by setting the element\'s android:accessibilityHeading attribute to true.</string>
+</resources>

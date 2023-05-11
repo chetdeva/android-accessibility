@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--    Editable Elements-->
+
+        <TextView
+            android:id="@+id/editable_elements_heading"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Editable Elements" />
+
+        <EditText
+            android:id="@+id/addressLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address Line" />
+
+        <!--    Pairs of elements where one describes the other-->
+        <TextView
+            android:id="@+id/pairs_of_elements"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Pairs of elements where one describes the other" />
+
+        <TextView
+            android:id="@+id/usernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/usernameEntry"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/usernameEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--    Group of related content-->
+        <TextView
+            android:id="@+id/group_of_related_content"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Group of related content" />
+
+        <LinearLayout
+            android:id="@+id/song_data_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/song_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="Song Title" />
+
+            <TextView
+                android:id="@+id/song_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="Song Artist" />
+
+        </LinearLayout>
+
+        <!--Custom group label-->
+        <TextView
+            android:id="@+id/custom_group_label"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Custom group label" />
+
+        <LinearLayout
+            android:id="@+id/song_data_container_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:contentDescription="Song title and artist"
+            android:orientation="vertical"
+            android:screenReaderFocusable="true">
+
+            <TextView
+                android:id="@+id/song_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="Song Title" />
+
+            <TextView
+                android:id="@+id/song_artist_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="Song Artist" />
+
+        </LinearLayout>
+
+        <!--    Headings within text-->
+        <TextView
+            android:id="@+id/headings_within_text"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Headings within text" />
+
+        <TextView
+            android:id="@+id/heading1"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:text="Heading 1" />
+
+        <TextView
+            android:id="@+id/paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heading_by_heading_paragraph" />
+
+        <TextView
+            android:id="@+id/heading2"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:text="Heading 2" />
+
+        <!--    Decorative elements-->
+
+        <TextView
+            android:id="@+id/decorative_elements"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Decorative elements" />
+
+        <TextView
+            android:id="@+id/decorative_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:text="This is a decorative element" />
+
+        <!--    Extend system widgets and Define custom events-->
+
+        <TextView
+            android:id="@+id/extend_system_widgets"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Extend system widgets and Define custom events" />
+
+        <FrameLayout
+            android:id="@+id/triswitch_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--        Accessibility Role Description-->
+
+        <TextView
+            android:id="@+id/role_description"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="Accessibility Role Description" />
+
+        <TextView
+            android:id="@+id/go_to_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to page"
+            android:textColor="@color/teal_700" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>
